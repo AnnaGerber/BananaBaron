@@ -1,0 +1,39 @@
+{
+  events: [
+    {
+       "heading": "Gouldian Finch has gone from critically endangered to extinct",
+       "location": { "lat": -22; "lon": 149.4 },
+       "description": "Environmental impact frequently places endangered species under stress through habitat change/fragmentation, forced migration and alternation of life cycle.",
+       "variations": [],
+       "outcomes": []
+       }
+    ],
+    actions: [
+      {
+        "name": "Buy emergency rations",
+        "description": "Ensure you have bottled water and non-perishable food in case you lose water and/or power during an emergency.",
+        "moreInfo": http://www.emergency.qld.gov.au/emq/css/beprepared.asp,
+        "outcomes": [
+          { preparation: 10, money: -10 }
+        ]
+      },
+      {
+        "name": "Buy torch, radio and batteries",
+        "description": "Ensure you have a working radio and torch, with fresh batteries, to stay informed and illuminated if you lose power during an emergency.",
+        "moreInfo": http://www.emergency.qld.gov.au/emq/css/beprepared.asp,
+        "outcome": { preparation: 10, money: -10 }
+      },
+      {
+        "name": "Prepare your home for a cyclone",
+        "description": "Clear your gutters and yard of loose items so they don't become projectiles during a storm. Set aside fresh water. Use masking tape in a cross pattern on windows to avoid flying shards of glass."
+        "moreInfo": http://www.emergency.qld.gov.au/emq/css/beprepared.asp,
+        "outcome": { preparation: 10}
+      },
+      {
+        "name": "Turn off your air-conditioning",
+        "description": "Australian households account for one fifth of Australia's greenhouse gas emissions, and 40% of household energy costs are used for heating and cooling. By limiting your use of air-conditioning, you can both save money and reduce your environmental impact!",
+        "moreInfo": http://www.yourhome.gov.au/energy,
+        "outcome": { impact: -10, money: 10 }
+	  }
+    ]
+}

@@ -19,7 +19,7 @@ exports.index = function(req, res) {
         {
            "heading": "Oh no! The Ghost Bat is now extinct!",
            "location": [-22, 149.4],
-           "image": "",
+           "image": "http://www.smh.com.au/content/dam/images/1/1/o/3/f/w/image.related.articleLeadwide.620x349.11n1m7.png/1418180769293.jpg",
            "description": "When animals' homes are destroyed, they have no place to live :(",
            "variations": [],
            "outcomes": []

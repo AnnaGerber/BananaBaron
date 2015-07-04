@@ -8,10 +8,14 @@ angular.module('bananabaronApp')
     $scope.customercount = 0;
     $scope.impact = 0;
     $scope.daycount = 0;
-
+    $scope.currentEvent = {};
+    
     $http.get('/api/gamestate').success(function(gameState) {
       if (gameState && gameState.length) {
-        $scope.gameState = gameState[0];  
+        var gameState = gameState[0]; 
+        $scope.events = gameState.events;
+        $scope.actions = gameState.actions;
+        $scope.currentEvent = $scope.events[1] 
       }
     });
 

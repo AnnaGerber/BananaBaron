@@ -27,7 +27,7 @@ angular.module('bananabaronApp')
     scope: {
       count: '='
     },
-    template: '<div><img  src="assets/images/coin.png">money: {{count}}<div ng-repeat="a in bananas track by $index" class="banana"></div></div>',
+    template: '<div style="padding-top:0.5em"><img style="padding-bottom: 0.5em;" src="assets/images/coin.png"> {{count}}</div>',
     controller: function($scope, $element){
 
     }
@@ -39,7 +39,7 @@ angular.module('bananabaronApp')
     scope: {
       count: '='
     },
-    template: '<div>DAY: {{count}}<div ng-repeat="a in bananas track by $index" class="banana"></div></div>',
+    template: '<div>DAY:{{count}}</div>',
     controller: function($scope, $element){
 
     }
@@ -51,7 +51,7 @@ angular.module('bananabaronApp')
     scope: {
       count: '='
     },
-    template: '<div>customers: {{count}}<div ng-repeat="a in bananas track by $index" class="banana"></div></div>',
+    template: '<div>CUSTOMERS: {{count}}</div>',
     controller: function($scope, $element){
 
     }
@@ -63,7 +63,7 @@ angular.module('bananabaronApp')
     scope: {
       impact: '='
     },
-    template: '<div>impact: {{impact}}<div ng-repeat="a in bananas track by $index" class="banana"></div></div>',
+    template: '<div>IMPACT: {{impact}}</div>',
     controller: function($scope, $element){
 
     }

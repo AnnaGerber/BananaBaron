@@ -9,15 +9,39 @@
        "outcomes": []
      },
      {
-       "heading": "A bushfire has broken out near Hughenden!",
+       "heading": "There is a flood at Burdekin River!",
+       "location": [146.9641,-20.6148],
+       "image": "",
+       "description": "Floods can happen very quickly after rain and storms.", 
+       "moreInfo": "https://www.qld.gov.au/emergency/dealing-disasters/flood.html",
+       "variations": [
+         { "condition": "preparation > 30",
+           "then": { "money": -20, "bananas": -10 },
+           "thenText": "Great preparations! You suffer less from the flooding",
+           "else": { "money": -50, "bananas": -20 },
+           "elseText": "Next time try to prepare better, so you don't lose so much!"
+          }
+        ],
+        "outcomes": []
+     },
+     {
+       "heading": "A bushfire has started near Hughenden!",
        "location": [144.2017,-20.8261],
        "image": "",
        "description": "Bushfires are not common in Queensland, but occur more often when its hotter.",
+       "variations": [],
+       "outcomes": []
+      },
+      {
+        "heading": "The bushfire at Hughenden has worsened",
+        "location": [144.2017,-20.8261],
+        "image": "",
+        "description": "Bushfires can move very quickly, especially if the wind changes",
        "variations": [
          { "condition": "preparation > 30",
-           "then" : { "money": -20 },
+           "then" : { "money": -20, "bananas": -10 },
            "thenText": "Because you prepared well, the fire didn't do as much damage",
-           "else": { "money": -50 },
+           "else": { "money": -50, "bananas": -20 },
            "elseText": "If you had prepared, you wouldn't have lost as much money in the fire."
            }
          ],
@@ -48,7 +72,8 @@
             "else": { "money": -100, "bananas": -20 },
             "elseText": "Oh no! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
           }
-        ]
+        ],
+        "outcomes": []
       }
     ],
     "actions": [

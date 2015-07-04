@@ -95,6 +95,12 @@
 	    "description": "Native trees are great places for birds and animals to live.",
 	    "moreInfo": "https://www.qld.gov.au/environment/plants-animals/plants/growing-natives/",
 	    "outcome": { "impact": -10 }
+	  },
+	  {
+	    "name": "Install solar power",
+	    "description": "Solar power saves carbon, and means you're having less impact on the environment",
+	    "moreInfo": "https://www.dews.qld.gov.au/energy-water-home/electricity/solar-bonus-scheme",
+	    "outcome": { "money": -100, "impact": -30 }
 	  }
     ]
 }

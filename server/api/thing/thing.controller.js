@@ -19,7 +19,7 @@ exports.index = function(req, res) {
         {
            "heading": "Oh no! The Ghost Bat is now extinct!",
            "location": [-22, 149.4],
-           "image": "http://www.smh.com.au/content/dam/images/1/1/o/3/f/w/image.related.articleLeadwide.620x349.11n1m7.png/1418180769293.jpg",
+           "image": "http://australianmuseum.net.au/uploads/images/5964/raw36896_big.jpg",
            "description": "When animals' homes are destroyed, they have no place to live :(",
            "variations": [],
            "outcomes": []
@@ -27,6 +27,7 @@ exports.index = function(req, res) {
          {
             "heading": "A category 3 cyclone named Winifred has appeared!",
             "location": [16263778.0000, -1990781.8913 ],
+            "image": "/assets/images/cyclone.jpg",
             "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
             "variations": [
               { "condition": "impact > 20",

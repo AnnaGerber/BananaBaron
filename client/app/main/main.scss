@@ -28,3 +28,18 @@
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
+.title {
+    text-align:center;
+    color: #F6F743;
+}
+.controls {
+    border: 3px solid #8B5F34;
+    border-radius: 4px;
+    margin-right: 1em;
+    padding: 0.5em;
+
+}
+body, .controls {
+    background:#1A1812;
+    color:white;  
+}

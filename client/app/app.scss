@@ -5,7 +5,9 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'font-awesome/scss/font-awesome';
 
 
-
+body {
+  font-family: 'Press Start 2P', monospace;
+}
 /**
  * App-wide Styles
  */
@@ -19,5 +21,20 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 
 // Component styles are injected through grunt
 // injector
+@import 'cartodb/cartodb.scss';
+@import 'infowindows/infowindow.scss';
 @import 'main/main.scss';
+@import 'pixelate/pixelate.scss';
 // endinjector
+.leaflet-bar {
+  box-shadow: none !important;
+
+  border: none;
+}
+.leaflet-bar a:last-child {
+    border-bottom: 3px solid #8B5F34 !important;
+}
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  border: 3px solid #8B5F34;
+  font-family: 'Press Start 2P', monospace;
+}

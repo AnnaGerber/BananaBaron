@@ -14,24 +14,62 @@ var _ = require('lodash');
 // Get list of things
 exports.index = function(req, res) {
   res.json([
-  {
-  name : 'Development Tools',
-  info : 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
-  }, {
-  name : 'Server and Client integration',
-  info : 'Built with a powerful and fun stack: MongoDB, Express, AngularJS, and Node.'
-  }, {
-  name : 'Smart Build System',
-  info : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html'
-  },  {
-  name : 'Modular Structure',
-  info : 'Best practice client and server structures allow for more code reusability and maximum scalability'
-  },  {
-  name : 'Optimized Build',
-  info : 'Build process packs up your templates as a single JavaScript payload, minifies your scripts/css/images, and rewrites asset names for caching.'
-  },{
-  name : 'Deployment Ready',
-  info : 'Easily deploy your app to Heroku or Openshift with the heroku and openshift subgenerators'
-  }
+    {
+      "events": [
+        {
+           "heading": "Oh no! The Ghost Bat is now extinct!",
+           "location": [-22, 149.4],
+           "image": "",
+           "description": "When animals' homes are destroyed, they have no place to live :(",
+           "variations": [],
+           "outcomes": []
+         },
+         {
+            "heading": "A category 3 cyclone named Winifred has appeared!",
+            "location": [16263778.0000, -1990781.8913 ],
+            "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
+            "variations": [
+              { "condition": "impact > 20",
+                "then": { "money": -50 },
+                "thenText": "As the sea temperature rises, cyclones get bigger and appear more often!"
+              },
+              { "condition": "preparation >= 20",
+                "then": { "money": -50 },
+                "thenText": "Good news! Your preparations meant the cyclone did less damage :)",
+                "else": { "money": -100 },
+                "elseText": "Oh no! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "name": "Buy emergency rations",
+            "description": "Stock up on bottled water and baked beans!",
+            "moreInfo": "http://www.emergency.qld.gov.au/emq/css/beprepared.asp",
+            "outcomes": [
+              { "preparation": 10, "money": -10 }
+            ]
+          },
+          {
+            "name": "Buy torch, radio and batteries",
+            "description": "A torch helps you see if the power goes out, and a radio lets you know when its safe to go outside again.",
+            "moreInfo": "http://www.emergency.qld.gov.au/emq/css/beprepared.asp",
+            "outcome": { "preparation": 10, "money": -10 }
+          },
+          {
+            "name": "Prepare your home for a cyclone",
+            "description": "If you clear things from your yard, then they won't fly around in the storm.",
+            "moreInfo": "http://www.emergency.qld.gov.au/emq/css/beprepared.asp",
+            "outcome": { "preparation": 10}
+          },
+          {
+            "name": "Turn off your air-conditioning",
+            "description": "The air-conditioner uses lots of energy, which costs you money and impacts the environment.",
+            "moreInfo": "http://www.yourhome.gov.au/energy",
+            "outcome": { "impact": -10, "money": 10 }
+        }
+        ]
+    }
   ]);
 };

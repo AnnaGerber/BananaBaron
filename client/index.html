@@ -20,6 +20,10 @@
       <!-- injector:css -->
       <!-- endinjector -->
     <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
     <script src="assets/Cesium/Cesium.js"></script>
         <style>
             @import url(assets/Cesium/Widgets/widgets.css);
@@ -72,9 +76,13 @@
         
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/cartodb/cartodb.directive.js"></script>
           <script src="app/cesium/cesium.directive.js"></script>
+          <script src="app/gamecounters/gamecounter.directive.js"></script>
+          <script src="app/infowindows/infowindow.directive.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
+          <script src="app/pixelate/pixelate.directive.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->

@@ -20,7 +20,7 @@ angular.module('bananabaronApp')
         //         scene3DOnly: true,
         //         geocoder: false
         //     });
-    var viewer = new Cesium.Viewer('cesiumContainer');
+      var viewer = new Cesium.Viewer('cesiumContainer');
 
     }
   };

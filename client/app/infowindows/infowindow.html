@@ -1,0 +1,6 @@
+<div class="info-window" >
+  <div ng-click="closeInfoWindow()" class="info-close float-right">&times;</div>
+  <h3 class="info-title">{{gameState.events[1].heading}}</h3>
+  <hr style="border-bottom: 3px solid #8B5F34;"/>
+  <div bind-html="gameState.events[1].description"></div>
+</div>

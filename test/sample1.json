@@ -6,7 +6,23 @@
        "description": "Environmental impact frequently places endangered species under stress through habitat change/fragmentation, forced migration and alternation of life cycle.",
        "variations": [],
        "outcomes": []
-       }
+     },
+     {
+        "heading": "A category 3 cyclone named Winifred has formed!",
+        "location": { "lat": 16263778.0000, "lon": -1990781.8913 },
+        "description": { "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
+        "variations": [
+          { "condition": "impact > 20",
+            "then": { "money": -50 },
+            "thenText": "Increases in pacific ocean temperatures has seen increase in the frequency and severity of large cyclones in the Coral Sea. These cyclones have much greater impact on both financial and human costs."
+          },
+          { "condition": "preparation >= 20",
+            "then": { "money": -50 },
+            "thenText": "Good news! Your careful preparations have mitigated the effect of the cyclone, and your property has sustained less damage than it otherwise would have.",
+            "else": { "money": -100 },
+            "elseText": "Oh no! By failing to prepare your supplies and your property for the cyclone, your property has sustained more damage, resulting in increased repair costs."
+          }
+        ]
     ],
     actions: [
       {

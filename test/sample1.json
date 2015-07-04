@@ -60,7 +60,12 @@
         "description": "The air-conditioner uses lots of energy, which costs you money and impacts the environment.",
         "moreInfo": "http://www.yourhome.gov.au/energy",
         "outcome": { "impact": -10, "money": 10 }
+	  },
+	  {
+	    "name": "Trim your banana plants before the storm hits.",
+	    "description": "If you trim your trees before the storm comes, they will grow back more quickly.",
+	    "moreInfo": "http://abgc.org.au/wp-content/uploads/2012/02/Scheduling-Banana-Production-After-Tropical-Cyclones-FINAL-REPORT.pdf",
+	    "outcome": { "preparation": 10}
 	  }
-	  
     ]
 }

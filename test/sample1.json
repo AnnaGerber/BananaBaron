@@ -1,33 +1,33 @@
 {
   events: [
     {
-       "heading": "Gouldian Finch has gone from critically endangered to extinct",
+       "heading": "Oh no! The Gouldian Finch is now extinct!",
        "location": [-22, 149.4],
-       "description": "Environmental impact frequently places endangered species under stress through habitat change/fragmentation, forced migration and alternation of life cycle.",
+       "description": "When animals' homes are destroyed, they have no place to live :(",
        "variations": [],
        "outcomes": []
      },
      {
-        "heading": "A category 3 cyclone named Winifred has formed!",
+        "heading": "A category 3 cyclone named Winifred has appeared!",
         "location": [16263778.0000, -1990781.8913 ],
         "description": { "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
         "variations": [
           { "condition": "impact > 20",
             "then": { "money": -50 },
-            "thenText": "Increases in pacific ocean temperatures has seen increase in the frequency and severity of large cyclones in the Coral Sea. These cyclones have much greater impact on both financial and human costs."
+            "thenText": "As the sea temperature rises, cyclones get bigger and appear more often!"
           },
           { "condition": "preparation >= 20",
             "then": { "money": -50 },
-            "thenText": "Good news! Your careful preparations have mitigated the effect of the cyclone, and your property has sustained less damage than it otherwise would have.",
+            "thenText": "Good news! Your preparations meant the cyclone did less damage :)",
             "else": { "money": -100 },
-            "elseText": "Oh no! By failing to prepare your supplies and your property for the cyclone, your property has sustained more damage, resulting in increased repair costs."
+            "elseText": "Oh no! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
           }
         ]
     ],
     actions: [
       {
         "name": "Buy emergency rations",
-        "description": "Ensure you have bottled water and non-perishable food in case you lose water and/or power during an emergency.",
+        "description": "Stock up on bottled water and baked beans!",
         "moreInfo": http://www.emergency.qld.gov.au/emq/css/beprepared.asp,
         "outcomes": [
           { preparation: 10, money: -10 }
@@ -35,19 +35,19 @@
       },
       {
         "name": "Buy torch, radio and batteries",
-        "description": "Ensure you have a working radio and torch, with fresh batteries, to stay informed and illuminated if you lose power during an emergency.",
+        "description": "A torch helps you see if the power goes out, and a radio lets you know when its safe to go outside again.",
         "moreInfo": http://www.emergency.qld.gov.au/emq/css/beprepared.asp,
         "outcome": { preparation: 10, money: -10 }
       },
       {
         "name": "Prepare your home for a cyclone",
-        "description": "Clear your gutters and yard of loose items so they don't become projectiles during a storm. Set aside fresh water. Use masking tape in a cross pattern on windows to avoid flying shards of glass."
+        "description": "If you clear things from your yard, then they won't fly around in the storm."
         "moreInfo": http://www.emergency.qld.gov.au/emq/css/beprepared.asp,
         "outcome": { preparation: 10}
       },
       {
         "name": "Turn off your air-conditioning",
-        "description": "Australian households account for one fifth of Australia's greenhouse gas emissions, and 40% of household energy costs are used for heating and cooling. By limiting your use of air-conditioning, you can both save money and reduce your environmental impact!",
+        "description": "The air-conditioner uses lots of energy, which costs you money and impacts the environment.",
         "moreInfo": http://www.yourhome.gov.au/energy,
         "outcome": { impact: -10, money: 10 }
 	  }

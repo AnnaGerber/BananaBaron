@@ -82,7 +82,19 @@
 	    "name": "Trim your banana plants before the storm hits.",
 	    "description": "If you trim your plants before the storm comes, they will grow back more quickly.",
 	    "moreInfo": "http://abgc.org.au/wp-content/uploads/2012/02/Scheduling-Banana-Production-After-Tropical-Cyclones-FINAL-REPORT.pdf",
-	    "outcome": { "preparation": 10}
+	    "outcome": { "preparation": 10 }
+	  },
+	  {
+	    "name": "Prepare your home for a bushfire",
+	    "description": "Fill your gutters with water and turn your sprinklers on to stop things from burning.",
+	    "moreInfo": "https://www.qld.gov.au/emergency/safety/prepare-home.html",
+	    "outcome": { "preparation": 10 }
+	  },
+	  {
+	    "name": "Plant some native trees",
+	    "description": "Native trees are great places for birds and animals to live.",
+	    "moreInfo": "https://www.qld.gov.au/environment/plants-animals/plants/growing-natives/",
+	    "outcome": { "impact": -10 }
 	  }
     ]
 }

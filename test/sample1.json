@@ -9,6 +9,14 @@
        "outcomes": []
      },
      {
+       "heading": "Cyclone Winifred has been sighted off the coast.",
+       "location": [16119062.0000,-1448309.8022],
+       "image": "",
+       "description": "The cyclone is coming. You should prepare for it!",
+       "variations": [],
+       "outcomes": []
+     },
+     {
         "heading": "A category 3 cyclone named Winifred has appeared!",
         "location": [16263778.0000, -1990781.8913 ],
         "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
@@ -53,5 +61,6 @@
         "moreInfo": "http://www.yourhome.gov.au/energy",
         "outcome": { "impact": -10, "money": 10 }
 	  }
+	  
     ]
 }

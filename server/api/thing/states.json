@@ -2,11 +2,17 @@
   "events": [
     {
        "heading": "Oh no! The Ghost Bat is now extinct!",
-       "location": [-22, 149.4],
-       "image": "",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/insectivorous_bats/clip_image002_0003.jpg",
        "description": "When animals' homes are destroyed, they have no place to live :(",
        "variations": [],
-       "outcomes": []
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Flatback Turtle is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/endangered/clip_image002_0007.jpg",
+       "description": "When animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
      },
      {
        "heading": "There is a flood at Burdekin River!",
@@ -15,15 +21,21 @@
        "icon": "/assets/images/flood1.png",
        "description": "Floods can happen very quickly after rain and storms.", 
        "moreInfo": "https://www.qld.gov.au/emergency/dealing-disasters/flood.html",
+       "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/1580166a-22a4-11e5-9e58-0e9d821ea90d/viz.json",
+       "layerTable": "disaster_events",
        "variations": [
-         { "condition": "preparation > 30",
+          { "condition": "impact > 30",
+            "then": { "money": -50, "population": -10 },
+            "thenText": "As things get hotter, disasters like floods appear more often"
+          },
+          { "condition": "preparation > 30",
            "then": { "money": -20, "bananas": -10 },
            "thenText": "Great preparations! You suffer less from the flooding",
-           "else": { "money": -50, "bananas": -20 },
-           "elseText": "Next time try to prepare better, so you don't lose so much!"
+           "else": { "money": -50, "bananas": -20, "population": -10 },
+           "elseText": "Some people died! Next time try to prepare better, so you don't lose so much!"
           }
         ],
-        "outcomes": []
+        "outcome": {}
      },
      {
        "heading": "A bushfire has started near Hughenden!",
@@ -31,8 +43,10 @@
        "image": "",
        "icon": "/assets/images/fire.png",
        "description": "Bushfires are not common in Queensland, but occur more often when its hotter.",
+       "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/e804679e-22a4-11e5-a167-0e9d821ea90d/viz.json",
+       "layerTable": "disaster_events",
        "variations": [],
-       "outcomes": []
+       "outcome": {}
       },
       {
         "heading": "The bushfire at Hughenden has worsened",
@@ -40,45 +54,53 @@
         "image": "",
         "icon": "/assets/images/fire.png",
         "description": "Bushfires can move very quickly, especially if the wind changes",
+       "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/e804679e-22a4-11e5-a167-0e9d821ea90d/viz.json",
+       "layerTable": "disaster_events",
        "variations": [
-         { "condition": "preparation > 30",
+          { "condition": "impact > 30",
+            "then": { "money": -50, "population": -10 },
+            "thenText": "Because things are getting hotter, fires get bigger and appear more often!"
+          },
+          { "condition": "preparation > 30",
            "then" : { "money": -20, "bananas": -10 },
            "thenText": "Because you prepared well, the fire didn't do as much damage",
-           "else": { "money": -50, "bananas": -20 },
-           "elseText": "If you had prepared, you wouldn't have lost as much money in the fire."
+           "else": { "money": -50, "bananas": -20, "population": -10 },
+           "elseText": "Some people died. If you had prepared, you wouldn't have lost as much money in the fire."
            }
          ],
-         "outcomes": [
-           { "bananas": -10 }
-         ]
+         "outcome": { "bananas": -10 }
      },
      {
-       "heading": "Cyclone Winifred has been sighted off the coast.",
+       "heading": "A category 3 cyclone named Winifred has been sighted off the coast.",
        "location": [16119062.0000,-1448309.8022],
        "image": "",
         "icon": "/assets/images/cyclone.png",
        "description": "The cyclone is coming. You should prepare for it!",
+        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
+        "layerTable": "idckmstm0s_csv_281_29",
        "variations": [],
-       "outcomes": []
+       "outcome": {}
      },
      {
-        "heading": "A category 3 cyclone named Winifred has appeared!",
+        "heading": "Category 3 Cyclone Winifred has struck the coast!",
         "location": [16263778.0000, -1990781.8913 ],
         "icon": "/assets/images/cyclone.png",
         "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
+        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
+        "layerTable": "idckmstm0s_csv_281_29",
         "variations": [
-          { "condition": "impact > 20",
-            "then": { "money": -50 },
+          { "condition": "impact > 30",
+            "then": { "money": -50, "population": -10 },
             "thenText": "As the sea temperature rises, cyclones get bigger and appear more often!"
           },
           { "condition": "preparation >= 20",
             "then": { "money": -50, "bananas": -10 },
             "thenText": "Good news! Your preparations meant the cyclone did less damage :)",
-            "else": { "money": -100, "bananas": -20 },
-            "elseText": "Oh no! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
+            "else": { "money": -100, "bananas": -20, "population": -10 },
+            "elseText": "Oh no! Some people died! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
           }
         ],
-        "outcomes": []
+        "outcome": {}
       }
     ],
     "actions": [
@@ -86,9 +108,7 @@
         "name": "Buy emergency rations",
         "description": "Stock up on bottled water and baked beans!",
         "moreInfo": "http://www.emergency.qld.gov.au/emq/css/beprepared.asp",
-        "outcomes": [
-          { "preparation": 10, "money": -10 }
-        ]
+        "outcome": { "preparation": 10, "money": -10 }
       },
       {
         "name": "Buy torch, radio and batteries",
@@ -107,48 +127,48 @@
         "description": "The air-conditioner uses lots of energy, which costs you money and impacts the environment.",
         "moreInfo": "http://www.yourhome.gov.au/energy",
         "outcome": { "impact": -10, "money": 10 }
-    },
-    {
-      "name": "Trim your banana plants before the storm hits.",
-      "description": "If you trim your plants before the storm comes, they will grow back more quickly.",
-      "moreInfo": "http://abgc.org.au/wp-content/uploads/2012/02/Scheduling-Banana-Production-After-Tropical-Cyclones-FINAL-REPORT.pdf",
-      "outcome": { "preparation": 10 }
-    },
-    {
-      "name": "Prepare your home for a bushfire",
-      "description": "Fill your gutters with water and turn your sprinklers on to stop things from burning.",
-      "moreInfo": "https://www.qld.gov.au/emergency/safety/prepare-home.html",
-      "outcome": { "preparation": 10 }
-    },
-    {
-      "name": "Plant some native trees",
-      "description": "Native trees are great places for birds and animals to live.",
-      "moreInfo": "https://www.qld.gov.au/environment/plants-animals/plants/growing-natives/",
-      "outcome": { "impact": -10 }
-    },
-    {
-      "name": "Install solar power",
-      "description": "Solar power saves carbon, and means you're having less impact on the environment",
-      "moreInfo": "https://www.dews.qld.gov.au/energy-water-home/electricity/solar-bonus-scheme",
-      "outcome": { "money": -100, "impact": -30 }
-    },
-    {
-      "name": "Use extra fertilizer",
-      "description": "Extra fertilizer will mean more bananas, but some of it will run off and pollute the environment",
-      "moreInfo": "",
-      "outcome": { "money": -10, "impact": 20, "bananas": 10 }
-    },
-    {
-      "name": "Buy a bigger tractor",
-      "description": "With the new T1000 you can harvest more bananas. It does pollute a bit though...",
-      "moreInfo": "",
-      "outcome": { "money": -10, "impact": 20, "bananas": 10 }
-    },
-    {
-      "name": "Clear some native forest",
-      "description": "With more land, you can grow lots more bananas! I'm not sure where the animals will live though",
-    "moreInfo": "https://www.qld.gov.au/environment/land/vegetation/clearing/",
-    "outome": { "money": -20, "bananas": 30, "impact": 40 }
-    }
+	  },
+	  {
+	    "name": "Trim your banana plants before the storm hits.",
+	    "description": "If you trim your plants before the storm comes, they will grow back more quickly.",
+	    "moreInfo": "http://abgc.org.au/wp-content/uploads/2012/02/Scheduling-Banana-Production-After-Tropical-Cyclones-FINAL-REPORT.pdf",
+	    "outcome": { "preparation": 10 }
+	  },
+	  {
+	    "name": "Prepare your home for a bushfire",
+	    "description": "Fill your gutters with water and turn your sprinklers on to stop things from burning.",
+	    "moreInfo": "https://www.qld.gov.au/emergency/safety/prepare-home.html",
+	    "outcome": { "preparation": 10 }
+	  },
+	  {
+	    "name": "Plant some native trees",
+	    "description": "Native trees are great places for birds and animals to live.",
+	    "moreInfo": "https://www.qld.gov.au/environment/plants-animals/plants/growing-natives/",
+	    "outcome": { "impact": -10 }
+	  },
+	  {
+	    "name": "Install solar power",
+	    "description": "Solar power saves carbon, and means you're having less impact on the environment",
+	    "moreInfo": "https://www.dews.qld.gov.au/energy-water-home/electricity/solar-bonus-scheme",
+	    "outcome": { "money": -100, "impact": -30 }
+	  },
+	  {
+	    "name": "Use extra fertilizer",
+	    "description": "Extra fertilizer will mean more bananas, but some of it will run off and pollute the environment",
+	    "moreInfo": "",
+	    "outcome": { "money": -10, "impact": 20, "bananas": 10 }
+	  },
+	  {
+	    "name": "Buy a bigger tractor",
+	    "description": "With the new T1000 you can harvest more bananas. It does pollute a bit though...",
+	    "moreInfo": "",
+	    "outcome": { "money": -10, "impact": 20, "bananas": 10 }
+	  },
+	  {
+	    "name": "Clear some native forest",
+	    "description": "With more land, you can grow lots more bananas! I'm not sure where the animals will live though",
+		"moreInfo": "https://www.qld.gov.au/environment/land/vegetation/clearing/",
+		"outcome": { "money": -20, "bananas": 30, "impact": 40 }
+	  }
     ]
 }

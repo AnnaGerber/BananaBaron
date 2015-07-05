@@ -27,7 +27,7 @@ angular.module('bananabaronApp')
     scope: {
       count: '='
     },
-    template: '<div style="padding-top:0.5em"><img style="padding-bottom: 0.5em;" src="assets/images/coin.png"> {{count}}</div>',
+    template: '<div style="padding-top:0.5em"><img style="height:22px" src="assets/images/coinbad.png"> {{count}}</div>',
     controller: function($scope, $element){
 
     }

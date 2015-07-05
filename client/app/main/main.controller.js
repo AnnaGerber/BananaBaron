@@ -9,6 +9,8 @@ angular.module('bananabaronApp')
     $scope.impact = 0;
     $scope.daycount = 0;
     $scope.currentEvent = {};
+    $scope.showActionWindow = false;
+    $scope.selectedAction = null;
     
     $http.get('/api/gamestate').success(function(gameState) {
       if (gameState && gameState.length) {

@@ -21,6 +21,7 @@ body {
 
 // Component styles are injected through grunt
 // injector
+@import 'actions/actions.scss';
 @import 'cartodb/cartodb.scss';
 @import 'infowindows/infowindow.scss';
 @import 'main/main.scss';

@@ -100,9 +100,9 @@
             "thenText": "As things get hotter, disasters like floods appear more often"
           },
           { "condition": "preparation > 30",
-           "then": { "money": -20, "bananas": -10 },
+           "then": { "money": -20, "bananas": -20 },
            "thenText": "Great preparations! You suffer less from the flooding",
-           "else": { "money": -50, "bananas": -20, "population": -10 },
+           "else": { "money": -50, "bananas": -50, "population": -10 },
            "elseText": "Banana plants lost! Next time try to prepare better, so you don't lose so much!"
           }
         ],
@@ -135,9 +135,9 @@
             "thenText": "Because things are getting hotter, fires get bigger and appear more often!"
           },
           { "condition": "preparation > 30",
-           "then" : { "money": -20, "bananas": -10 },
+           "then" : { "money": -20, "bananas": -30 },
            "thenText": "Because you prepared well, the fire didn't do as much damage",
-           "else": { "money": -50, "bananas": -20, "population": -10 },
+           "else": { "money": -50, "bananas": -80, "population": -10 },
            "elseText": "Banana plants burnt! If you had prepared, you wouldn't have lost as much in the fire."
            }
          ],
@@ -169,9 +169,9 @@
             "thenText": "As the sea temperature rises, cyclones get bigger and appear more often!"
           },
           { "condition": "preparation >= 20",
-            "then": { "money": -50, "bananas": -10 },
+            "then": { "money": -50, "bananas": -30 },
             "thenText": "Good news! Your preparations meant the cyclone did less damage :)",
-            "else": { "money": -100, "bananas": -20, "population": -10 },
+            "else": { "money": -100, "bananas": -100, "population": -10 },
             "elseText": "Oh no! You lost some of your banana plants! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
           }
         ],

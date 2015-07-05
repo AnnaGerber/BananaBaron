@@ -45,13 +45,13 @@ angular.module('bananabaronApp')
     }
   }
 })
-.directive('customercounter', function(){
+.directive('prepcounter', function(){
   return {
     restrict: 'A',
     scope: {
       count: '='
     },
-    template: '<div>CUSTOMERS: {{count}}</div>',
+    template: '<div>PREP: {{count}}</div>',
     controller: function($scope, $element){
 
     }

@@ -52,6 +52,9 @@ angular.module('bananabaronApp')
           if (action.outcome.impact) {
             $scope.impact += action.outcome.impact;
           }
+          if (action.outcome.preparation) {
+            $scope.preparation += action.outcome.preparation;
+          }
         }
         $scope.daycount++;
         $scope.showActionWindow = false;

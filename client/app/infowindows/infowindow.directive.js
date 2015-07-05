@@ -15,7 +15,7 @@ angular.module('bananabaronApp')
           $scope.events.forEach(function(ev, index){
             $scope.eventqueue.push(ev);
           })
-          var randomTimeout = Math.random() * 20000;
+          var randomTimeout = Math.random() * 10000;
           console.log("next event in ", randomTimeout)
           setTimeout($scope.scheduleEvent,randomTimeout);
 
@@ -34,8 +34,11 @@ angular.module('bananabaronApp')
             $scope.moreInfo = ev.moreInfo;
             $scope.variations = ev.variations;
             $scope.layerJSON = ev.layerJSON;
+            $scope.articlesJSON = ev.articlesJSON;
             $scope.showInfoWindow = true;
-            $scope.addMarker(ev.location, ev.icon);
+            if (ev.location) {
+             $scope.addMarker(ev.location);
+            }
             if ($scope.variations) {
               $scope.variations.forEach(function(v){
                 var money = $scope.moneycounter;

@@ -28,8 +28,8 @@ angular.module('bananabaronApp')
       $scope.doAction=function(action){
         console.log("do action",action)
         console.log("do action",action.outcome)
-        $scope.bananacount += 1;
-        if (action.name=='Sell bananas') {
+        
+        if ($scope.bananacount > 0 && action.name=='Sell bananas') {
           $scope.moneycount += 10 * $scope.bananacount;
           $scope.bananacount = 0;
 
@@ -57,6 +57,7 @@ angular.module('bananabaronApp')
           }
         }
         $scope.daycount++;
+        $scope.bananacount++;
         $scope.showActionWindow = false;
         $scope.getNewState();
       }  

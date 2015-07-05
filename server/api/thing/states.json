@@ -114,7 +114,7 @@
        "icon": "/assets/images/fire.png",
        "description": "Bushfires are not common in Queensland, but occur more often when its hotter.",
        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/e804679e-22a4-11e5-a167-0e9d821ea90d/viz.json",
-       "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/7d5e08de-22c5-11e5-bb78-0e4fddd5de28/viz.json"
+       "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/7d5e08de-22c5-11e5-bb78-0e4fddd5de28/viz.json",
        "layerTable": "disaster_events",
        "variations": [],
        "outcome": {}
@@ -126,7 +126,7 @@
         "icon": "/assets/images/fire.png",
         "description": "Bushfires can move very quickly, especially if the wind changes",
        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/e804679e-22a4-11e5-a167-0e9d821ea90d/viz.json",
-       "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/7d5e08de-22c5-11e5-bb78-0e4fddd5de28/viz.json"
+       "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/7d5e08de-22c5-11e5-bb78-0e4fddd5de28/viz.json",
        "layerTable": "disaster_events",
        "variations": [
           { "condition": "impact > 30",
@@ -150,6 +150,7 @@
        "description": "The cyclone is coming. You should prepare for it!",
         "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
         "layerTable": "idckmstm0s_csv_281_29",
+        "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/023f5eda-22c7-11e5-903c-0e018d66dc29/viz.json",
        "variations": [],
        "outcome": {}
      },
@@ -160,6 +161,7 @@
         "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
         "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
         "layerTable": "idckmstm0s_csv_281_29",
+        "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/023f5eda-22c7-11e5-903c-0e018d66dc29/viz.json",
         "variations": [
           { "condition": "impact > 30",
             "then": { "money": -50, "population": -10 },

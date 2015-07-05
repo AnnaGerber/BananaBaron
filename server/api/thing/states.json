@@ -265,7 +265,42 @@
           }
         ],
         "outcome": {}
+      },
+           {
+       "heading": "A category 3 cyclone named Ivor has been sighted off the coast.",
+       "location": [149.3000,-21.6000],
+       "image": "",
+        "icon": "/assets/images/cyclone.png",
+       "description": "The cyclone is coming. You should prepare for it!",
+        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
+        "layerTable": "idckmstm0s_csv_281_29",
+        "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/023f5eda-22c7-11e5-903c-0e018d66dc29/viz.json",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+        "heading": "Category 3 Cyclone Ivor has struck the coast!",
+        "location": [149.3000,-21.6000],
+        "icon": "/assets/images/cyclone.png",
+        "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
+        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
+        "layerTable": "idckmstm0s_csv_281_29",
+        "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/023f5eda-22c7-11e5-903c-0e018d66dc29/viz.json",
+        "variations": [
+          { "condition": "impact > 30",
+            "then": { "money": -50, "population": -10 },
+            "thenText": "As the sea temperature rises, cyclones get bigger and appear more often!"
+          },
+          { "condition": "preparation >= 20",
+            "then": { "money": -50, "bananas": -30 },
+            "thenText": "Good news! Your preparations meant the cyclone did less damage :)",
+            "else": { "money": -100, "bananas": -100, "population": -10 },
+            "elseText": "Oh no! You lost some of your banana plants! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
+          }
+        ],
+        "outcome": {}
       }
+
     ],
     "actions": [
       {

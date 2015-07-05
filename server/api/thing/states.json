@@ -225,7 +225,7 @@
 	    "name": "Install solar power",
 	    "description": "Solar power saves carbon, and means you're having less impact on the environment",
 	    "moreInfo": "https://www.dews.qld.gov.au/energy-water-home/electricity/solar-bonus-scheme",
-	    "outcome": { "money": -100, "impact": -30 }
+	    "outcome": { "money": -40, "impact": -30 }
 	  },
 	  {
 	    "name": "Use extra fertilizer",
@@ -237,7 +237,7 @@
 	    "name": "Buy a bigger tractor",
 	    "description": "With the new T1000 you can harvest more bananas. It does pollute a bit though...",
 	    "moreInfo": "",
-	    "outcome": { "money": -10, "impact": 20, "bananas": 10 }
+	    "outcome": { "money": -30, "impact": 20, "bananas": 10 }
 	  },
 	  {
 	    "name": "Clear some native forest",

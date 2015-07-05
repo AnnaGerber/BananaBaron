@@ -1,0 +1,13 @@
+<div ng-show="showActionWindow" class="action-window">
+  <div ng-click="closeActionWindow()" class="action-close float-right">&times;</div>
+  <h3 class="info-title">{{selectedAction.name}}</h3>
+  
+  <hr style="border-bottom: 3px solid #8B5F34;"/>
+  <div>{{selectedAction.description}}</div>
+  <a target="_blank" ng-attr-href="{{selectedAction.moreInfo}}">Read more</a>
+
+
+
+  <div class="actioncancel" ng-click="closeActionWindow()">CANCEL</div>
+  <div class="actionconfirm" ng-click="doAction(selectedAction)">OK</div>
+</div>

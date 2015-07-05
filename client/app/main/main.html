@@ -1,23 +1,30 @@
 <!--div style="height:600px" cesium></div-->
-<div ng-hide="showPopover" class="row">
+<div class="row">
   <div class="col-xs-9"  style="padding:0;padding-left:14px" cartodb></div>
   <div class="col-xs-3" style="padding:0">
     <div class="controls">
-    <h1 class="title">BANANA<br/>BARON</h1>
+      <h1 class="title">BANANA<br/>BARON</h1>
     </div>
     <div class="controls">
-
-    <div bananacounter count="bananacount"></div>
-    <div moneycounter count="moneycount"></div>
+      <div bananacounter count="bananacount"></div>
+      <div moneycounter count="moneycount"></div>
+      
+      <div impactmeter impact="impact"></div>
+      
+      <div  daycounter count="daycount"></div>
+      <div  customercounter count="customercount"></div>
     
-    <div impactmeter impact="impact"></div>
-    
-    <div  daycounter count="daycount"></div>
-    <div  customercounter count="customercount"></div>
-    
+    </div>
+    <div class="controls">
+      <div>ACTIONS:</div>
+      <div ng-repeat="action in actions" actionlist> 
+      </div>
     </div>
   </div>
 </div>
-<div infowindow event="gameState.events[1]" ng-show="showInfoWindow">
 
+<div infowindow>
+</div>
+
+<div actionwindow>
 </div>

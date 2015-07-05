@@ -39,3 +39,9 @@ body {
   border: 3px solid #8B5F34;
   font-family: 'Press Start 2P', monospace;
 }
+.cartodb-infowindow, .cartodb-tooltip, .cartodb-popup-content, .cartodb-tooltip-content {
+  h4, p {
+  font-family: 'Press Start 2P', monospace !important;
+  padding:3px;
+  }
+}

@@ -22,14 +22,15 @@ angular.module('bananabaronApp')
        
        $scope.scheduleEvent = function(){
         console.log("Schedule event",$scope)
-
         if ($scope.eventqueue && $scope.eventqueue.length) {
           var ev = $scope.eventqueue.pop();
           console.log("event is",ev)
           $scope.$apply(function(){
-            $scope.imageurl = ev.image;            
+            $scope.imageurl = ev.image;  
+            $scope.heading = ev.heading;          
             $scope.description = ev.description;
             $scope.showInfoWindow = true;
+            $scope.addMarker(ev.location, ev.icon);
           })
           
         }
@@ -38,7 +39,7 @@ angular.module('bananabaronApp')
        $scope.closeInfoWindow = function(){
         console.log("close");
         $scope.showInfoWindow = false;
-        var randomTimeout = Math.random() * 5000;
+        var randomTimeout = Math.random() * 20000;
         console.log("next event in ", randomTimeout)
         setTimeout($scope.scheduleEvent,randomTimeout);
        }

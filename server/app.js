@@ -18,14 +18,14 @@ require('./config/express')(app);
 require('./routes')(app);
 console.log("config is", config)
 // connect to db
-r.connect(config.rethinkdb, function(err, conn){
-  if (err) {
-    console.log(err);
-    return;
-  }
-  console.log("connected to rethinkdb", conn)
-  app._rdbConn = conn;
-});
+// r.connect(config.rethinkdb, function(err, conn){
+//   if (err) {
+//     console.log(err);
+//     return;
+//   }
+//   console.log("connected to rethinkdb", conn)
+//   app._rdbConn = conn;
+// });
 
 // Start server
 server.listen(config.port, config.ip, function () {

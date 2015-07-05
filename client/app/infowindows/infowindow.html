@@ -8,8 +8,6 @@
   <div style="margin:1em">{{description}}</div>
 
   <div style="margin:1em"><a ng-show="moreInfo" target="_blank" ng-attr-href="{{moreInfo}}">Read more</a></div>
-
-
   
   <div style="margin:1em;color:red" ng-repeat="variation in variations">
     <div ng-show="variation.showVariation">{{variation.thenText}}</div>
@@ -17,5 +15,5 @@
   </div>
 
   <div class="actioncancel" ng-show="layerJSON" ng-click="showMap(layerJSON)">View events on map</div>
-  <div class="actioncancel" ng-show="articleJSON" ng-click="showMap(articleJSON)">View related news on map</div>
+  <div class="actioncancel" ng-show="articlesJSON" ng-click="showMap(articlesJSON)">View related news on map</div>
 </div>

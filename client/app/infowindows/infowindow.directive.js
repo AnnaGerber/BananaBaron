@@ -34,7 +34,7 @@ angular.module('bananabaronApp')
             $scope.moreInfo = ev.moreInfo;
             $scope.variations = ev.variations;
             $scope.layerJSON = ev.layerJSON;
-            $scope.articleJSON = ev.articleJSON;
+            $scope.articlesJSON = ev.articlesJSON;
             $scope.showInfoWindow = true;
             if (ev.location) {
              $scope.addMarker(ev.location);

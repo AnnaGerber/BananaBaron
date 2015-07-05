@@ -3,14 +3,84 @@
     {
        "heading": "Oh no! The Ghost Bat is now extinct!",
        "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/insectivorous_bats/clip_image002_0003.jpg",
-       "description": "When animals' homes are destroyed, they have no place to live :(",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
        "variations": [],
        "outcome": {}
      },
      {
        "heading": "Oh no! The Flatback Turtle is now extinct!",
        "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/endangered/clip_image002_0007.jpg",
-       "description": "When animals' homes are destroyed, they have no place to live :(",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Dugong is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/wildlife/images/dugong_dugon.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Hawksbill Turtle is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/clip_image002_0026.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Black-Breasted Button Quail is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/wildlife/images/black_breasted_button_quail_feeding.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Spotted-Tailed Quoll is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/endangered/spotted_tailed_quoll.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Green Turtle is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/threatened_species_week/green_turtle_hatchling.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Eclectus Parrot is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/threatened_species/eclectus1.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Richmond Birdwing Butterfly is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/wildlife/images/rbirdwing_mating_pair.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Yellow-Bellied Glider is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/wildlife/images/yellow-bellied-glider-mark-mccaffrey.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Humpback Whale is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife_watching/whales5.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
+       "variations": [],
+       "outcome": {}
+     },
+     {
+       "heading": "Oh no! The Beach Stone Curlew is now extinct!",
+       "image": "http://www.ehp.qld.gov.au/images/wildlife-ecosystems/wildlife/a-z_of_animals/esacus_neglectus.jpg",
+       "description": "When vulnerable animals' homes are destroyed, they have no place to live :(",
        "variations": [],
        "outcome": {}
      },

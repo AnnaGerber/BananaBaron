@@ -85,6 +85,22 @@
        "outcome": {}
      },
      {
+       "heading": "Queensland is in the grips of a heatwave!",
+       "image": "",
+       "icon": "",
+       "description": "The rivers and lakes are drying up! So are the bananas!",
+       "moreInfo": "https://www.qld.gov.au/emergency/safety/heat-sun-safety.html",
+       "variations": [
+         { "condition": "preparation > 20",
+           "then": { "money": -10, "bananas": -10 },
+           "thenText": "Your preparations mean that you didn't lose much in the heatwave",
+           "else": { "money": -30, "bananas": -30 },
+           "elseText": "More banana plants have died; try to prepare better next time!"
+         }
+    	],
+    	"outcome": {}
+     },
+     {
        "heading": "There is a flood at Burdekin River!",
        "location": [146.9641,-20.6148],
        "image": "",

@@ -358,6 +358,13 @@
 	    "outcome": { "money": -10, "impact": 20, "bananas": 10 }
 	  },
 	  {
+	    "name": "Apply manure",
+	    "description": "Putting cow manure on your bananas will help them grow",
+	    "moreInfo": "",
+	    "outcome": { "bananas": 10 }
+	  },
+
+	  {
 	    "name": "Buy a bigger tractor",
 	    "description": "With the new T1000 you can harvest more bananas. It does pollute a bit though...",
 	    "moreInfo": "",

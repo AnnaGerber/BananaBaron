@@ -58,7 +58,7 @@ angular.module('bananabaronApp')
 
       scope.map = new L.Map('map', {
         center: [-21.575718932458464, 144.31640625],
-        zoom: 7
+        zoom: 6
       });
 
       L.tileLayer('https://a.tiles.mapbox.com/v4/annagerber.0ff7cd50/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW5uYWdlcmJlciIsImEiOiIzMmQzYzZjMjljZmRlNzUzZTQ4ZjBkYWNmODIxM2VlOCJ9.lShcI19wgAeogoA_zEIiuw', {

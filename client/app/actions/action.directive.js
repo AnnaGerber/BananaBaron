@@ -26,17 +26,34 @@ angular.module('bananabaronApp')
           $scope.showActionWindow = false;
       }
       $scope.doAction=function(action){
+        console.log("do action",action)
         console.log("do action",action.outcome)
+        $scope.bananacount += 1;
+        if (action.name=='Sell bananas') {
+          $scope.moneycount += 10 * $scope.bananacount;
+          $scope.bananacount = 0;
 
-        if (action.outcome.money){
-          $scope.moneycount += action.outcome.money;
+        } else if (action.outcome) {
+          if (action.outcome.money){
+            if ($scope.moneycount > (0-action.outcome.money)) {
+              $scope.moneycount += action.outcome.money;
+            } else {
+              alert('Not enough money for this action! Try selling some bananas first');
+            }
+          }
+          if (action.outcome.bananas) {
+            if($scope.bananacount > (0 - (action.outcome.bananas/10))) {
+              $scope.bananacount += action.outcome.bananas / 10;
+              console.log("banana count is now",$scope.bananacount)
+            } else {
+              alert('Not enough bananas! Wait for more to grow');
+            }
+          }
+          if (action.outcome.impact) {
+            $scope.impact += action.outcome.impact;
+          }
         }
-        if (action.outcome.bananas) {
-          $scope.bananacount += action.outcome.banana;
-        }
-        if (action.outcome.impact) {
-          $scope.impact += action.outcome.impact;
-        }
+        $scope.daycount++;
         $scope.showActionWindow = false;
         $scope.getNewState();
       }  

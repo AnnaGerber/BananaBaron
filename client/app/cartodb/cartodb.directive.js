@@ -5,6 +5,9 @@ angular.module('bananabaronApp')
     restrict: 'A',
     template: '<div id="map"></div>',
     controller: function($scope, $element){
+       $scope.showLayerOnMap = function(layerJSON) {
+        console.log("show layer", layerJSON)
+       }
        $scope.addMarker = function(point,iconPath) {
           console.log("add marker", point, iconPath)
           var myIcon = L.icon({

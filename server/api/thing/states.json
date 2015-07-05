@@ -93,6 +93,7 @@
        "moreInfo": "https://www.qld.gov.au/emergency/dealing-disasters/flood.html",
        "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/1580166a-22a4-11e5-9e58-0e9d821ea90d/viz.json",
        "layerTable": "disaster_events",
+	   "articlesJSON": "https://jimsteel.cartodb.com/api/v2/viz/cb5766be-22c7-11e5-a536-0e018d66dc29/viz.json",
        "variations": [
           { "condition": "impact > 30",
             "then": { "money": -50, "population": -10 },

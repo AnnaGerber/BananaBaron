@@ -29,20 +29,30 @@ angular.module('bananabaronApp')
         console.log("do action",action)
         console.log("do action",action.outcome)
         
-        if ($scope.bananacount > 0 && action.name=='Sell bananas') {
-          $scope.moneycount += 10 * $scope.bananacount;
-          $scope.bananacount = 0;
-
+        if (action.name=='Sell bananas') {
+          if ($scope.bananacount > 0) {
+           $scope.moneycount += 10 * $scope.bananacount;
+            $scope.bananacount = 0;
+          } else {
+            alert("You don't have any bananas to sell!");
+          }
+        } else if (action.name=="Advertise") {
+          if ($scope.moneycount >= 50) {
+            $scope.moneycount -= 50;
+            $scope.bananaboost++;
+          } else {
+            alert("Advertising is expensive! Sell some more bananas first")
+          }
         } else if (action.outcome) {
           if (action.outcome.money){
-            if ($scope.moneycount > (0-action.outcome.money)) {
+            if ($scope.moneycount >= (0-action.outcome.money)) {
               $scope.moneycount += action.outcome.money;
             } else {
-              alert('Not enough money for this action! Try selling some bananas first');
+              alert('Not enough money! Try selling some bananas first');
             }
           }
           if (action.outcome.bananas) {
-            if($scope.bananacount > (0 - (action.outcome.bananas/10))) {
+            if($scope.bananacount >= (0 - (action.outcome.bananas/10))) {
               $scope.bananacount += action.outcome.bananas / 10;
               console.log("banana count is now",$scope.bananacount)
             } else {
@@ -57,7 +67,7 @@ angular.module('bananabaronApp')
           }
         }
         $scope.daycount++;
-        $scope.bananacount++;
+        $scope.bananacount += $scope.bananaboost;
         $scope.showActionWindow = false;
         $scope.getNewState();
       }  

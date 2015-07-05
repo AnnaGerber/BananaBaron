@@ -15,7 +15,7 @@ angular.module('bananabaronApp')
           $scope.events.forEach(function(ev, index){
             $scope.eventqueue.push(ev);
           })
-          var randomTimeout = Math.random() * 10000;
+          var randomTimeout = Math.random() * 5000;
           console.log("next event in ", randomTimeout)
           setTimeout($scope.scheduleEvent,randomTimeout);
 

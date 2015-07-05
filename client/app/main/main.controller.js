@@ -4,12 +4,13 @@ angular.module('bananabaronApp')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.gameState = {};
     $scope.bananacount = 1;
+    $scope.bananaboost = 1;
     $scope.moneycount = 100;
     $scope.customercount = 0;
     $scope.impact = 100;
     $scope.daycount = 1;
     $scope.preparation = 0;
-    
+
     $scope.currentEvent = {};
     $scope.showInfoWindow = false;
 
@@ -24,9 +25,12 @@ angular.module('bananabaronApp')
           $scope.actions = gameState.actions;
           $scope.actions.push({
             'name': 'Sell bananas',
-            'description': 'Make money by selling all of your current stock of bananas',
-            'outcome': {'bananas':10}
+            'description': 'Make money by selling all of your current stock of bananas'
           });
+          $scope.actions.push({
+            'name': 'Advertise',
+            'description': 'Advertising will help you sell more bananas'
+          })
           $scope.currentEvent = $scope.events[0];
         }
       });

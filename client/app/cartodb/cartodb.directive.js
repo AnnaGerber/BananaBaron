@@ -7,13 +7,17 @@ angular.module('bananabaronApp')
     controller: function($scope, $element){
        $scope.showLayerOnMap = function(layerJSON) {
         if ($scope.currentLayer) {
-          //L.removeLayer($scope.currentLayer);
+          try{
+            $scope.currentLayer.hide();
+          } catch (e){
+            console.log(e);
+          }
         }
         console.log("show layer", layerJSON)
         cartodb.createLayer($scope.map, layerJSON)
           .addTo($scope.map)
         .on('done', function(layer) {
-          console.log("layer added")
+          console.log("layer added", layer)
           $scope.currentLayer = layer;
         })
         .on('error', function(err) {

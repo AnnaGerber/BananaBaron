@@ -76,7 +76,7 @@
      {
         "heading": "A category 3 cyclone named Winifred has struck!",
         "location": [16263778.0000, -1990781.8913 ],
-        "description": "Cyclones are a huge threat every summer in Queensland. As well as destructive winds, cyclones also typically result in flooding, often over large areas.",
+        "description": "Cyclones are a huge threat every summer in Queensland. They bring strong winds and often flooding.",
         "layerJSON": "https://jimsteel.cartodb.com/api/v2/viz/f67575c0-2204-11e5-a167-0e9d821ea90d/viz.json",
         "layerTable": "idckmstm0s_csv_281_29",
         "variations": [

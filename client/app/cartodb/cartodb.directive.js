@@ -20,21 +20,29 @@ angular.module('bananabaronApp')
           console.log("some error occurred adding map layer: " + err);
         });
        }
-       $scope.addMarker = function(point,iconPath) {
-          console.log("add marker", point, iconPath)
-          return false;
+       $scope.addMarker = function(ll) {
+          console.log("add marker", ll)
+          
           try {
-            var myIcon = L.icon({
-                iconUrl: iconPath,   
-                iconSize: [38, 95],
-                iconAnchor: [22, 94],
-                popupAnchor: [-3, -76],
-                shadowSize: [68, 95],
-                shadowAnchor: [22, 94]
-            });
+            if ($scope.marker) {
+              $scope.map.removeLayer($scope.marker)
 
-            $scope.latestMarker = L.marker(point).addTo($scope.map);
-            console.log("marker",$scope.latestMarker)
+            }
+            // var myIcon = L.icon({
+            //     iconUrl: iconPath,   
+            //     iconSize: [38, 95],
+            //     iconAnchor: [22, 94],
+            //     popupAnchor: [-3, -76],
+            //     shadowSize: [68, 95],
+            //     shadowAnchor: [22, 94]
+            // });
+            if (ll) {
+              $scope.marker = new L.marker(ll, {draggable:true});
+              $scope.map.addLayer($scope.marker);  
+            }
+            
+            
+            console.log("marker",$scope.marker)
           } catch (e) {
             console.log("error adding marker",e);
           }

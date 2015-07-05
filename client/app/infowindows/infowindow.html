@@ -13,7 +13,8 @@
     <div ng-show="variation.showVariation">{{variation.thenText}}</div>
     <div ng-hide="variation.showVariation">{{variation.elseText}}</div>
   </div>
-
+  <div class="actioncancel" ng-click="closeInfoWindow()">OK</div>
   <div class="actioncancel" ng-show="layerJSON" ng-click="showMap(layerJSON)">View events on map</div>
   <div class="actioncancel" ng-show="articlesJSON" ng-click="showMap(articlesJSON)">View related news on map</div>
+
 </div>

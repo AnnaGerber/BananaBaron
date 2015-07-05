@@ -103,7 +103,7 @@
            "then": { "money": -20, "bananas": -10 },
            "thenText": "Great preparations! You suffer less from the flooding",
            "else": { "money": -50, "bananas": -20, "population": -10 },
-           "elseText": "Some people died! Next time try to prepare better, so you don't lose so much!"
+           "elseText": "Banana plants lost! Next time try to prepare better, so you don't lose so much!"
           }
         ],
         "outcome": {}
@@ -138,7 +138,7 @@
            "then" : { "money": -20, "bananas": -10 },
            "thenText": "Because you prepared well, the fire didn't do as much damage",
            "else": { "money": -50, "bananas": -20, "population": -10 },
-           "elseText": "Some people died. If you had prepared, you wouldn't have lost as much money in the fire."
+           "elseText": "Banana plants burnt! If you had prepared, you wouldn't have lost as much in the fire."
            }
          ],
          "outcome": { "bananas": -10 }
@@ -172,7 +172,7 @@
             "then": { "money": -50, "bananas": -10 },
             "thenText": "Good news! Your preparations meant the cyclone did less damage :)",
             "else": { "money": -100, "bananas": -20, "population": -10 },
-            "elseText": "Oh no! Some people died! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
+            "elseText": "Oh no! You lost some of your banana plants! By failing to prepare your supplies and your farm for the cyclone, your sustained more damage."
           }
         ],
         "outcome": {}

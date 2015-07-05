@@ -6,9 +6,10 @@ angular.module('bananabaronApp')
     $scope.bananacount = 1;
     $scope.moneycount = 100;
     $scope.customercount = 0;
-    $scope.impact = 50;
-    $scope.daycount = 0;
-
+    $scope.impact = 100;
+    $scope.daycount = 1;
+    $scope.preparation = 0;
+    
     $scope.currentEvent = {};
     $scope.showInfoWindow = false;
 

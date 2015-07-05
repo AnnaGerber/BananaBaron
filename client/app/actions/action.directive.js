@@ -11,6 +11,7 @@ angular.module('bananabaronApp')
       console.log("show action",action)
       $scope.$parent.selectedAction = action;
       $scope.$parent.showActionWindow = true;
+      window.scrollTo(0,0);
      }
     }
   }
@@ -25,9 +26,19 @@ angular.module('bananabaronApp')
           $scope.showActionWindow = false;
       }
       $scope.doAction=function(action){
-        var outcomes = action.outcomes;
-        console.log("do",outcomes,$scope)
+        console.log("do action",action.outcome)
+
+        if (action.outcome.money){
+          $scope.moneycount += action.outcome.money;
+        }
+        if (action.outcome.bananas) {
+          $scope.bananacount += action.outcome.banana;
+        }
+        if (action.outcome.impact) {
+          $scope.impact += action.outcome.impact;
+        }
         $scope.showActionWindow = false;
+        $scope.getNewState();
       }  
     }
   }

@@ -15,7 +15,7 @@ angular.module('bananabaronApp')
           $scope.events.forEach(function(ev, index){
             $scope.eventqueue.push(ev);
           })
-          setTimeout($scope.scheduleEvent,1000);
+          setTimeout($scope.scheduleEvent,2000);
           console.log("updated event", $scope)
         }
        },true)
@@ -29,12 +29,18 @@ angular.module('bananabaronApp')
             $scope.imageurl = ev.image;  
             $scope.heading = ev.heading;          
             $scope.description = ev.description;
+            $scope.moreInfo = ev.moreInfo;
+            $scope.layerJSON = ev.layerJSON;
             $scope.showInfoWindow = true;
             $scope.addMarker(ev.location, ev.icon);
           })
           
         }
 
+       }
+       $scope.showMap = function(json) {
+        $scope.showInfoWindow = false;
+        $scope.showLayerOnMap(json);
        }
        $scope.closeInfoWindow = function(){
         console.log("close");

@@ -63,7 +63,7 @@ angular.module('bananabaronApp')
     scope: {
       impact: '='
     },
-    template: '<div>IMPACT: {{impact}}</div>',
+    templateUrl: 'app/gamecounters/impactmeter.html',
     controller: function($scope, $element){
 
     }

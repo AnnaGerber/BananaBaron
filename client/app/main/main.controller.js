@@ -4,9 +4,9 @@ angular.module('bananabaronApp')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.gameState = {};
     $scope.bananacount = 1;
-    $scope.moneycount = 1000;
+    $scope.moneycount = 100;
     $scope.customercount = 0;
-    $scope.impact = 0;
+    $scope.impact = 50;
     $scope.daycount = 0;
 
     $scope.currentEvent = {};
@@ -19,7 +19,13 @@ angular.module('bananabaronApp')
         console.log("got game state",gameState)
         if (gameState) {
           $scope.events = gameState.events;
+          
           $scope.actions = gameState.actions;
+          $scope.actions.push({
+            'name': 'Sell bananas',
+            'description': 'Make money by selling all of your current stock of bananas',
+            'outcome': {'bananas':10}
+          });
           $scope.currentEvent = $scope.events[0];
         }
       });

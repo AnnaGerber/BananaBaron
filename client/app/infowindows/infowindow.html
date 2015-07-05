@@ -3,13 +3,14 @@
   <h3 class="info-title">{{heading}}</h3>
 
   <hr style="border-bottom: 3px solid #8B5F34;"/>
-  <div pixelate></div>
+  <div ng-show="imageurl" pixelate></div>
 
   <div>{{description}}</div>
 
   <div><a ng-show="moreInfo" target="_blank" ng-attr-href="{{moreInfo}}">Read more</a></div>
 
-  <div><a ng-show="layerJSON" ng-click="showLayerOnMap(layerJSON)">View more about this event on the map</a></div>
+
+  <div class="actioncancel" ng-show="layerJSON" ng-click="showMap(layerJSON)">View on map</div>
 
 
 </div>

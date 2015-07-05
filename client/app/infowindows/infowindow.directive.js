@@ -30,13 +30,17 @@ angular.module('bananabaronApp')
             $scope.heading = ev.heading;          
             $scope.description = ev.description;
             $scope.moreInfo = ev.moreInfo;
-            $scope.layer = ev.layerJSON;
+            $scope.layerJSON = ev.layerJSON;
             $scope.showInfoWindow = true;
             $scope.addMarker(ev.location, ev.icon);
           })
           
         }
 
+       }
+       $scope.showMap = function(json) {
+        $scope.showInfoWindow = false;
+        $scope.showLayerOnMap(json);
        }
        $scope.closeInfoWindow = function(){
         console.log("close");

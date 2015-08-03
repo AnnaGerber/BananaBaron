@@ -1,0 +1,23 @@
+Makers
+
+Anna Gerber		Jim Steel
+
+Data Sources
+
+Emergency Preparation Advice	Qld Govt, Dept of Community Safety
+Vulnerable Species Details		WildNet
+								Qld Govt Dept of Env and Htg Prot.
+Cyclone Paths					Bureau of Meteorology DB of Past Cyclones
+Flood & Fire Locations			Aust. Emergency Mgmt Knowledge Hub
+Air Conditioner Usage			Aust Gov Dept of Science & Industry
+								YourHome.gov.au
+Population statistics by SUA	Aust. Bureau of Statistics 2011 Census
+Flood/cyclone/fire stories		ABC Local Online Photo Stories
+Cyclone banana prep advice		Aust Banana Growers Council
+
+Tools
+
+Data Storage and Mapping		CartoDB
+Web Front End					AngularJS
+Wed Back End					Node.js
+Art Assets						Make8BitArt.com
